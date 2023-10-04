@@ -1,0 +1,359 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a modern font-family to "Poppins" */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+.pdf-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0099CC;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-link a:hover {
+    background-color: #33CC99;
+}
+
+/* Style the header with an intricate and cooler color gradient */
+header {
+    background: linear-gradient(45deg, #0099CC, #00CC99, #33CC99, #0099CC, #00CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Create a cooler color gradient animation for the header */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Style the navigation menu with a cooler color gradient appearance */
+nav {
+    background: linear-gradient(45deg, #0066CC, #33CC99, #0099CC, #0066CC, #33CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #33CC99;
+}
+
+a:hover {
+    color: yellow;
+}
+
+/* Style the main content area with cooler color gradients */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #0099CC, #0066CC, #33CC99, #33CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+/* Create a cooler color gradient animation for the main content */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Center-align paragraph text within sections */
+section p {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the contact form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #0099CC, #0066CC, #33CC99, #33CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Style the footer with cooler color gradients */
+footer {
+    background: linear-gradient(45deg, #0066CC, #33CC99, #0099CC, #0099CC, #33CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for each portfolio item */
+.portfolio, .pdf-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Style for each portfolio item */
+.portfolio-item, .pdf-portfolio-item {
+    background: linear-gradient(135deg, #33CC99, #0099CC, #0066CC, #33CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 10px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item:last-child, .pdf-portfolio-item:last-child {
+    margin-right: 0;
+}
+
+.portfolio-item:hover, .pdf-portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3, .pdf-portfolio-item h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Add spacing between title and video */
+}
+
+.portfolio-item iframe, .pdf-portfolio-item iframe {
+    max-width: 100%;
+    margin: 0 auto; /* Center the video horizontally */
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+}
+
+.video-container, .pdf-container {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+
+.pdf-portfolio-item p {
+    text-align: center;
+    color: orange; /* Choose your desired text color */
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: 10px; /* Add margin spacing */
+}
+
+/* Style the design portfolio section */
+.design-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items at the top vertically */
+    margin: 20px;
+}
+
+/* Style each design portfolio item */
+.design-portfolio-item {
+    background: linear-gradient(135deg, #33CC99, #0099CC, #0066CC, #33CC99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: calc(50% - 20px); /* Set the width to 50% of the container */
+    text-align: center; /* Center the text and elements within each item */
+    margin: 10px; /* Adjust margin as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-portfolio-item:last-child {
+    margin-right: 10px; /* Adjust the margin for the last item */
+}
+.design-portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.design-portfolio-item h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.design-portfolio-item p {
+    color: #fff;
+    font-size: 1em;
+}
+
+    .design-portfolio-item img {
+        max-width: 100%;
+        max-height: 200px; /* Adjust the maximum height to make the images slightly bigger */
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+/* Create an intricate and colorful image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-height: 10em;
+}
+
+/* Add an intricate and colorful parallax section */
+.parallax {
+    height: 300px; /* Decrease the height to make it smaller */
+    background-attachment: fixed;
+    background-size: auto 100%; /* Set auto for width, 100% for height */
+    background-position: center;
+    background-image: url('vscopor.jpg');
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Reduce opacity to make it less washed out */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.parallax h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.parallax p {
+    font-size: 18px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #333; /* Dark text color */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Style the submit input */
+input[type="submit"] {
+    background-color: blue; /* Change this to the desired color */
+    color: #fff; /* Text color for the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF4500; /* Change this to the desired hover color */
+}
+
+.centered-photo {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
